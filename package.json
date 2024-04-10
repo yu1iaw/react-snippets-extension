@@ -1,0 +1,42 @@
+{
+  "name": "react-reactnative-snippets-essential",
+  "displayName": "Essential React/React Native Snippets",
+  "description": "Elegant and useful snippets for React, React Native, Expo. You'll love them all!",
+  "version": "0.0.1",
+  "publisher": "yu1ia vasyleniuk",
+  "galleryBanner": {
+    "color": "#FFFAF0",
+    "theme": "dark"
+  },
+  "icon": "images/iconic.png",
+  "pricing": "Free",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "bugs": {
+    "email": "juliav@proton.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yu1iaw/react-snippets-extension"
+  },
+  "keywords": [
+    "vscode",
+    "react",
+    "react native",
+    "expo",
+    "pattern",
+    "templates",
+    "snippets"
+  ],
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+    "⚛ arrow fn named export": {
+        "scope": "javascript,typescript,javascriptreact,typescriptreact",
+        "prefix": "asy",
+        "body": [
+            "export const $TM_FILENAME_BASE = () => {\r",
+            "    return (\r",
+            "        <>$0</>\r",
+            "    )\r",
+            "}"
+        ],
+        "description": "arrow function named export"
+    },
+    "⚛ arrow fn default export": {
+        "scope": "javascript,typescript,javascriptreact,typescriptreact",
+        "prefix": "asd",
+        "body": [
+            "const ${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}$1 = () => {\r",
+            "    return (\r",
+            "        <></>\r",
+            "    )\r",
+            "}\r",
+            "\r",
+            "export default ${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}$1;"
+        ],
+        "description": "arrow function default export"
+    },
+    "⚛ file related fn": {
+        "scope": "javascript,typescript,javascriptreact,typescriptreact",
+        "prefix": "asfr",
+        "body": [
+            "export default function $1${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}() {\r",
+            "    return (\r",
+            "        <></>\r",
+            "    )\r",
+            "}"
+        ],
+        "description": "default export before a function declaration, function name relates to file name"
+    },
+    "⚛ folder related fn": {
+        "scope": "javascript,typescript,javascriptreact,typescriptreact",
+        "prefix": "aswr",
+        "body": [
+            "export default function ${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/}() {\r",
+            "    return (\r",
+            "        <>$0</>\r",
+            "    )\r",
+            "}"
+        ],
+        "description": "default export before a function declaration, function name relates to folder name"
+    },
+    "⚛ choice fn": {
+        "scope": "javascript,typescript,javascriptreact,typescriptreact",
+        "prefix": "asch",
+        "body": [
+            "export default function $2${1|Page,Layout|}() {\r",
+            "    return (\r",
+            "        <></>\r",
+            "    )\r",
+            "}"
+        ],
+        "description": "choose function name between Page and Layout and export by default"
+    },
+    "⚛ useState": {
+        "scope": "javascript,typescript,javascriptreact,typescriptreact",
+        "prefix": "us",
+        "body": "const [$1, set${1/(.*)/${1:/capitalize}/}] = useState$0(\"\");",
+        "description": "useState hook: press Tab after typing the value and let magic happen"
+    },
+    "⚛ useRef": {
+        "scope": "javascript,typescript,javascriptreact,typescriptreact",
+        "prefix": "uref",
+        "body": "const $1Ref = useRef$0(null);",
+        "description": "useRef hook: press Ctrl+Space to import hook"
+    },
+    "⚛ useEffect": {
+        "scope": "javascript,typescript,javascriptreact,typescriptreact",
+        "prefix": "ue",
+        "body": [
+            "useEffect$1(() => {\r",
+            "    $2\r",
+            "}, [])"
+        ],
+        "description": "useEffect hook: press Ctrl+Space to import hook"
+    },
+    "⚛ useLayoutEffect": {
+        "scope": "javascript,typescript,javascriptreact,typescriptreact",
+        "prefix": "ule",
+        "body": [
+            "useLayoutEffect$1(() => {\r",
+            "    $2\r",
+            "}, [])"
+        ],
+        "description": "useLayoutEffect hook: press Ctrl+Space to import hook"
+    },
+    "⚛ React Context API": {
+        "scope": "javascript,typescript,javascriptreact,typescriptreact",
+        "prefix": "cctx",
+        "body": [
+            "import { createContext, useContext } from \"react\";\r",
+            "\r",
+            "const $1Context = createContext(null);\r",
+            "\r",
+            "\r",
+            "export const $1ContextProvider = ({ children }) => {\r",
+            "    $0\r",
+            "\r",
+            "    return (\r",
+            "        <$1Context.Provider value={{}}>\r",
+            "            {children}\r",
+            "        </$1Context.Provider>\r",
+            "    );\r",
+            "}\r",
+            "\r",
+            "export const use$1 = () => {\r",
+            "    const value = useContext($1Context);\r",
+            "\r",
+            "    if (!value) {\r",
+            "        throw new Error(`use$1 must be wrapped inside $1ContextProvider`);\r",
+            "    }\r",
+            "\r",
+            "    return value;\r",
+            "}"
+        ],
+        "description": "React Context API"
+    },
+    "⚛ expo component": {
+        "scope": "javascript,typescript,javascriptreact,typescriptreact",
+        "prefix": "ec",
+        "body": [
+            "import { View, Text } from 'react-native';\r",
+            "\r",
+            "\r",
+            "\r",
+            "export const $TM_FILENAME_BASE = () => {\r",
+            "    return (\r",
+            "        <View>\r",
+            "            <Text>$TM_FILENAME_BASE$0</Text>\r",
+            "        </View>\r",
+            "    )\r",
+            "}"
+        ],
+        "description": "expo/react native component named export"
+    },
+    "⚛ expo component & stylesheet": {
+        "scope": "javascript,typescript,javascriptreact,typescriptreact",
+        "prefix": "ecss",
+        "body": [
+            "import { View, Text, StyleSheet } from 'react-native';\r",
+            "\r",
+            "\r",
+            "\r",
+            "export const $TM_FILENAME_BASE = () => {\r",
+            "    return (\r",
+            "        <View>\r",
+            "            <Text>$TM_FILENAME_BASE$1</Text>\r",
+            "        </View>\r",
+            "    )\r",
+            "}\r",
+            "\r",
+            "const styles = StyleSheet.create({\r",
+            "    $2\r",
+            "})"
+        ],
+        "description": "named export before expo/react native function expression & stylesheet"
+    },
+    "⚛ expo stylesheet": {
+        "scope": "javascript,typescript,javascriptreact,typescriptreact",
+        "prefix": "ess",
+        "body": [
+            "import { StyleSheet } from \"react-native\";\r",
+            "\r",
+            "export default StyleSheet.create({\r",
+            "    container: {\r",
+            "        flex: 1,\r",
+            "        backgroundColor: \"#fff\",\r",
+            "        $0\r",
+            "    },\r",
+            "})"
+        ],
+        "description": "expo/react native stylesheet default export"
+    }
+}
