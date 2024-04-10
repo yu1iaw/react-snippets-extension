@@ -169,7 +169,7 @@ export default StyleSheet.create({
 ```
 
 # Demo
-![Demo of how some snippets work](images/Code_VR2VUygHSA.gif)
+![Demo of how some snippets work](https://github.com/yu1iaw/react-snippets-extension/blob/main/images/Code_VR2VUygHSA.gif)
 
 **That's it! Enjoy and happy coding!**
 
