@@ -2,7 +2,7 @@
   "name": "react-reactnative-snippets-essential",
   "displayName": "Essential React/React Native Snippets",
   "description": "Elegant and useful snippets for React, React Native, Expo. You'll love them all!",
-  "version": "0.1.3",
+  "version": "0.1.35",
   "publisher": "yu1ia-vasyleniuk",
   "galleryBanner": {
     "color": "#007399",
@@ -11,7 +11,7 @@
   "icon": "images/iconic.png",
   "pricing": "Free",
   "engines": {
-    "vscode": "^1.88.0"
+    "vscode": "^1.49.0"
   },
   "bugs": {
     "email": "juliav@proton.me"
