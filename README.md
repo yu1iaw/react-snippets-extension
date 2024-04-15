@@ -18,9 +18,12 @@ Finally, I dedicate this extention to my dad, who celebrates his birthday on `13
 | `ue`    | *useEffect hook*                  |
 | `ule`   | *useLayoutEffect hook*            |
 | `cctx`  | *Create Context*                  |
+| `fli`   | *FlatList*                        |
 | `ec`    | *Expo Component*                  |
-| `ecss`  | *Expo Component & StyleSheet*     |
-| `ess`   | *Expo StyleSheet*                 |
+| `ss`    | *StyleSheet*                      |
+| `ssac`  | *StyleSheet align center*         |
+| `ssrw`  | *StyleSheet row*                  |
+| `ess`   | *Export StyleSheet*               |
 
 
 <br />
@@ -127,43 +130,61 @@ export const use| = () => {
 
 # React Native, Expo
 
+### `fli` : 💡 FlatList
+```javascript
+<FlatList|
+    data={data|}
+    keyExtractor={item => item.id}
+    showsVerticalScrollIndicator={false}
+    renderItem={({ item }) => (
+        <RenderItem| />
+    )}
+/>
+```
 ### `ec` : 💡 Expo Component
 ```javascript
 import { View, Text } from 'react-native';
 
-export const example = () => {
+export const Example = () => {
     return (
         <View>
-            <Text>example|</Text>
+            <Text>Example|</Text>
         </View>
     )
 }
 ```
-### `ecss` : 💡 Expo Component & StyleSheet
+### `ss` : 💡 StyleSheet
 ```javascript
-import { View, Text, StyleSheet } from 'react-native';
-
-export const example = () => {
-    return (
-        <View>
-            <Text>example|</Text>
-        </View>
-    )
-}
-
-const styles = StyleSheet.create({
+const styles = StyleSheet|.create({
     
 })
 ```
-### `ess` : 💡 Expo StyleSheet
+### `ssac` : 💡 StyleSheet align center
+```javascript
+container: {
+    flex: 1,
+    justifyContent: "center",
+    alighItems: "center",
+    gap: 16,|
+},
+```
+### `ssrw` : 💡 StyleSheet row
+```javascript
+rowContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    margin: 16,|
+},
+```
+### `ess` : 💡 Export StyleSheet
 ```javascript
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
-    container: {
+    mainContainer: {
         flex: 1,
-        backgroundColor: "#fff",
-        |
+        backgroundColor: "#fff",|
     },
 })
 ```
@@ -171,7 +192,7 @@ export default StyleSheet.create({
 # Demo
 ![Demo of how some snippets work](https://raw.githubusercontent.com/yu1iaw/react-snippets-extension/main/images/Demo.gif)
 
-**That's it! Enjoy and happy coding!**
+**That's it! Install and happy coding!**
 
 ---
 ## What's next

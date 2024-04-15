@@ -64,7 +64,7 @@
     "⚛ useState": {
         "scope": "javascript,typescript,javascriptreact,typescriptreact",
         "prefix": "us",
-        "body": "const [$1, set${1/(.*)/${1:/capitalize}/}] = useState$0(\"\");",
+        "body": "const [$1, set${1/(.*)/${1:/capitalize}/}] = useState$2(\"\"$0);",
         "description": "useState hook: press Tab after typing the value and let magic happen"
     },
     "⚛ useRef": {
@@ -78,7 +78,7 @@
         "prefix": "ue",
         "body": [
             "useEffect$1(() => {\r",
-            "    $2\r",
+            "    $0\r",
             "}, [])"
         ],
         "description": "useEffect hook: press Ctrl+Space to import hook"
@@ -88,7 +88,7 @@
         "prefix": "ule",
         "body": [
             "useLayoutEffect$1(() => {\r",
-            "    $2\r",
+            "    $0\r",
             "}, [])"
         ],
         "description": "useLayoutEffect hook: press Ctrl+Space to import hook"
@@ -124,6 +124,21 @@
         ],
         "description": "React Context API"
     },
+    "⚛ FlatList": {
+        "scope": "javascript,typescript,javascriptreact,typescriptreact",
+        "prefix": "fli",
+        "body": [
+            "<FlatList$1\r",
+            "    data={data$2}\r",
+            "    keyExtractor={item => item.id}\r",
+            "    showsVerticalScrollIndicator={false}\r",
+            "    renderItem={({ item }) => (\r",
+            "        <RenderItem$0 />\r",
+            "    )}\r",
+            "/>"
+        ],
+        "description": "FlatList component"
+    },
     "⚛ expo component": {
         "scope": "javascript,typescript,javascriptreact,typescriptreact",
         "prefix": "ec",
@@ -142,39 +157,52 @@
         ],
         "description": "expo/react native component named export"
     },
-    "⚛ expo component & stylesheet": {
+    "⚛ stylesheet": {
         "scope": "javascript,typescript,javascriptreact,typescriptreact",
-        "prefix": "ecss",
+        "prefix": "ss",
         "body": [
-            "import { View, Text, StyleSheet } from 'react-native';\r",
-            "\r",
-            "\r",
-            "\r",
-            "export const $TM_FILENAME_BASE = () => {\r",
-            "    return (\r",
-            "        <View>\r",
-            "            <Text>$TM_FILENAME_BASE$1</Text>\r",
-            "        </View>\r",
-            "    )\r",
-            "}\r",
-            "\r",
-            "const styles = StyleSheet.create({\r",
-            "    $2\r",
+            "const styles = StyleSheet$1.create({\r",
+            "    $0\r",
             "})"
         ],
-        "description": "named export before expo/react native function expression & stylesheet"
+        "description": "stylesheet variable"
     },
-    "⚛ expo stylesheet": {
+    "⚛ stylesheet align center": {
+        "scope": "javascript,typescript,javascriptreact,typescriptreact",
+        "prefix": "ssac",
+        "body": [
+            "container: {\r",
+            "    flex: 1,\r",
+            "    justifyContent: \"center\",\r",
+            "    alighItems: \"center\",\r",
+            "    gap: 16,$0\r",
+            "},"
+        ],
+        "description": "stylesheet centered container"
+    },
+    "⚛ stylesheet row": {
+        "scope": "javascript,typescript,javascriptreact,typescriptreact",
+        "prefix": "ssrw",
+        "body": [
+            "rowContainer: {\r",
+            "    flexDirection: \"row\",\r",
+            "    justifyContent: \"space-between\",\r",
+            "    alignItems: \"center\",\r",
+            "    margin: 16,$0\r",
+            "},"
+        ],
+        "description": "stylesheet row container"
+    },
+    "⚛ export stylesheet": {
         "scope": "javascript,typescript,javascriptreact,typescriptreact",
         "prefix": "ess",
         "body": [
             "import { StyleSheet } from \"react-native\";\r",
             "\r",
             "export default StyleSheet.create({\r",
-            "    container: {\r",
+            "    mainContainer: {\r",
             "        flex: 1,\r",
-            "        backgroundColor: \"#fff\",\r",
-            "        $0\r",
+            "        backgroundColor: \"#fff\",$0\r",
             "    },\r",
             "})"
         ],
