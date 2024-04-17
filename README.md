@@ -2,28 +2,28 @@
 
 As the saying goes, *"God helps those who help themselves"*. So I accumulated my efforts and did it. And now you, my colleague, as well as me, have enough fingers and toes to count all snippets I've created. In addition snippets' prefix is easy to remember and find the right keys on your keyboard. Add this awesome set, enjoy and boost your productivity.⚡
 
-Finally, I dedicate this extention to my dad, who celebrates his birthday on `13`th of May.👋🎉
+Finally, I dedicate this extension to my dad, who celebrates his birthday on `13`th of May.👋🎉
 
 # Overview
 
 | Snippet | Description                       |                  |
 | ------- | --------------------------------- |----------------- |
-| `asy`   | *Arrow function named export*     | [🛈](#example1)  |
-| `asd`   | *Arrow function default export*   | [🛈](#example2)  |
-| `asfr`  | *File related function*           | [🛈](#example3)  |
-| `aswr`  | *Folder related function*         | [🛈](#example4)  |
-| `asch`  | *Choice function*                 | [🛈](#example5)  |
-| `us`    | *useState hook*                   | [🛈](#example6)  |
-| `uref`  | *useRef hook*                     | [🛈](#example7)  |
-| `ue`    | *useEffect hook*                  | [🛈](#example8)  |
-| `ule`   | *useLayoutEffect hook*            | [🛈](#example9)  |
-| `cctx`  | *Create Context*                  | [🛈](#example10) |
-| `fli`   | *FlatList*                        | [🛈](#example11) |
-| `ec`    | *Expo Component*                  | [🛈](#example12) |
-| `ss`    | *StyleSheet*                      | [🛈](#example13) |
-| `ssac`  | *StyleSheet align center*         | [🛈](#example14) |
-| `ssrw`  | *StyleSheet row*                  | [🛈](#example15) |
-| `ess`   | *Export StyleSheet*               | [🛈](#example16) |
+| `asy`   | *Arrow function named export*     | [ℹ️](#example1)  |
+| `asd`   | *Arrow function default export*   | [ℹ️](#example2)  |
+| `asfr`  | *File related function*           | [ℹ️](#example3)  |
+| `aswr`  | *Folder related function*         | [ℹ️](#example4)  |
+| `asch`  | *Choice function*                 | [ℹ️](#example5)  |
+| `us`    | *useState hook*                   | [ℹ️](#example6)  |
+| `uref`  | *useRef hook*                     | [ℹ️](#example7)  |
+| `ue`    | *useEffect hook*                  | [ℹ️](#example8)  |
+| `ule`   | *useLayoutEffect hook*            | [ℹ️](#example9)  |
+| `cctx`  | *Create Context*                  | [ℹ️](#example10) |
+| `fli`   | *FlatList*                        | [ℹ️](#example11) |
+| `ec`    | *Expo Component*                  | [ℹ️](#example12) |
+| `ss`    | *StyleSheet*                      | [ℹ️](#example13) |
+| `ssac`  | *StyleSheet align center*         | [ℹ️](#example14) |
+| `ssrw`  | *StyleSheet row*                  | [ℹ️](#example15) |
+| `ess`   | *Export StyleSheet*               | [ℹ️](#example16) |
 
 
 <br />
