@@ -6,24 +6,24 @@ Finally, I dedicate this extention to my dad, who celebrates his birthday on `13
 
 # Overview
 
-| Snippet | Description                       |
-| ------- | --------------------------------- |
-| `asy`   | *Arrow function named export*     |
-| `asd`   | *Arrow function default export*   |
-| `asfr`  | *File related function*           |
-| `aswr`  | *Folder related function*         |
-| `asch`  | *Choice function*                 |
-| `us`    | *useState hook*                   |
-| `uref`  | *useRef hook*                     |
-| `ue`    | *useEffect hook*                  |
-| `ule`   | *useLayoutEffect hook*            |
-| `cctx`  | *Create Context*                  |
-| `fli`   | *FlatList*                        |
-| `ec`    | *Expo Component*                  |
-| `ss`    | *StyleSheet*                      |
-| `ssac`  | *StyleSheet align center*         |
-| `ssrw`  | *StyleSheet row*                  |
-| `ess`   | *Export StyleSheet*               |
+| Snippet | Description                       |                  |
+| ------- | --------------------------------- |----------------- |
+| `asy`   | *Arrow function named export*     | [🛈](#example1)  |
+| `asd`   | *Arrow function default export*   | [🛈](#example2)  |
+| `asfr`  | *File related function*           | [🛈](#example3)  |
+| `aswr`  | *Folder related function*         | [🛈](#example4)  |
+| `asch`  | *Choice function*                 | [🛈](#example5)  |
+| `us`    | *useState hook*                   | [🛈](#example6)  |
+| `uref`  | *useRef hook*                     | [🛈](#example7)  |
+| `ue`    | *useEffect hook*                  | [🛈](#example8)  |
+| `ule`   | *useLayoutEffect hook*            | [🛈](#example9)  |
+| `cctx`  | *Create Context*                  | [🛈](#example10) |
+| `fli`   | *FlatList*                        | [🛈](#example11) |
+| `ec`    | *Expo Component*                  | [🛈](#example12) |
+| `ss`    | *StyleSheet*                      | [🛈](#example13) |
+| `ssac`  | *StyleSheet align center*         | [🛈](#example14) |
+| `ssrw`  | *StyleSheet row*                  | [🛈](#example15) |
+| `ess`   | *Export StyleSheet*               | [🛈](#example16) |
 
 
 <br />
@@ -34,7 +34,7 @@ Finally, I dedicate this extention to my dad, who celebrates his birthday on `13
 
 <br />
 
-### `asy` : 💡 Arrow function named export
+### <p id="example1">`asy` : 💡 Arrow function named export [⬆️](#overview)</p>
 ```javascript
 export const example = () => {
     return (
@@ -42,7 +42,7 @@ export const example = () => {
     )
 }
 ```
-### `asd` : 💡 Arrow function default export
+### <p id="example2">`asd` : 💡 Arrow function default export [⬆️](#overview)</p>
 ```javascript
 const Example| = () => {
     return (
@@ -52,7 +52,7 @@ const Example| = () => {
 
 export default Example|;
 ```
-### `asfr` : 💡 Function name relates to file name
+### <p id="example3">`asfr` : 💡 Function name relates to file name [⬆️](#overview)</p>
 ```javascript
 export default function |Example() {
     return (
@@ -60,7 +60,7 @@ export default function |Example() {
     )
 }
 ```
-### `aswr` : 💡 Function name relates to folder (wrapper) name
+### <p id="example4">`aswr` : 💡 Function name relates to folder (wrapper) name [⬆️](#overview)</p>
 ```javascript
 export default function FolderName() {
     return (
@@ -68,7 +68,7 @@ export default function FolderName() {
     )
 }
 ```
-### `asch` : 💡 Choose function name between 'Page' and 'Layout'
+### <p id="example5">`asch` : 💡 Choose function name between 'Page' and 'Layout' [⬆️](#overview)</p>
 ```javascript
 export default function |Layout() {
     return (
@@ -76,30 +76,30 @@ export default function |Layout() {
     )
 }
 ```
-### `us` : 💡 useState hook
+### <p id="example6">`us` : 💡 useState hook [⬆️](#overview)</p>
 ```javascript
 const [|, set|] = useState("");
 // press `Tab` after typing the value and let magic happen
 ```
-### `uref` : 💡 useRef hook
+### <p id="example7">`uref` : 💡 useRef hook [⬆️](#overview)</p>
 ```javascript
 const |Ref = useRef(null);
 ```
-### `ue` : 💡 useEffect hook
+### <p id="example8">`ue` : 💡 useEffect hook [⬆️](#overview)</p>
 ```javascript
 useEffect|(() => {
     
 }, [])
 // press `Ctrl`+`Space` to import useEffect
 ```
-### `ule` : 💡 useLayoutEffect hook
+### <p id="example9">`ule` : 💡 useLayoutEffect hook [⬆️](#overview)</p>
 ```javascript
 useLayoutEffect|(() => {
     
 }, [])
 // press `Ctrl`+`Space` to import useLayoutEffect
 ```
-### `cctx` : 💡 Create React Context
+### <p id="example10">`cctx` : 💡 Create React Context [⬆️](#overview)</p>
 ```javascript
 import { createContext, useContext } from "react";
 
@@ -130,7 +130,7 @@ export const use| = () => {
 
 # React Native, Expo
 
-### `fli` : 💡 FlatList
+### <p id="example11">`fli` : 💡 FlatList [⬆️](#overview)</p>
 ```javascript
 <FlatList|
     data={data|}
@@ -141,7 +141,7 @@ export const use| = () => {
     )}
 />
 ```
-### `ec` : 💡 Expo Component
+### <p id="example12">`ec` : 💡 Expo Component [⬆️](#overview)</p>
 ```javascript
 import { View, Text } from 'react-native';
 
@@ -153,13 +153,13 @@ export const Example = () => {
     )
 }
 ```
-### `ss` : 💡 StyleSheet
+### <p id="example13">`ss` : 💡 StyleSheet [⬆️](#overview)</p>
 ```javascript
 const styles = StyleSheet|.create({
     
 })
 ```
-### `ssac` : 💡 StyleSheet align center
+### <p id="example14">`ssac` : 💡 StyleSheet align center [⬆️](#overview)</p>
 ```javascript
 container: {
     flex: 1,
@@ -168,7 +168,7 @@ container: {
     gap: 16,|
 },
 ```
-### `ssrw` : 💡 StyleSheet row
+### <p id="example15">`ssrw` : 💡 StyleSheet row [⬆️](#overview)</p>
 ```javascript
 rowContainer: {
     flexDirection: "row",
@@ -177,7 +177,7 @@ rowContainer: {
     margin: 16,|
 },
 ```
-### `ess` : 💡 Export StyleSheet
+### <p id="example16">`ess` : 💡 Export StyleSheet [⬆️](#overview)</p>
 ```javascript
 import { StyleSheet } from "react-native";
 
