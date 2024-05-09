@@ -174,7 +174,7 @@
             "container: {\r",
             "    flex: 1,\r",
             "    justifyContent: \"center\",\r",
-            "    alighItems: \"center\",\r",
+            "    alignItems: \"center\",\r",
             "    gap: 16,$0\r",
             "},"
         ],
@@ -207,5 +207,49 @@
             "})"
         ],
         "description": "expo/react native stylesheet default export"
-    }
+    },
+    "⚛ useLocalSearchParams": {
+        "scope": "javascript,typescript,javascriptreact,typescriptreact",
+        "prefix": "ersea",
+        "body": "const { $1 } = useLocalSearchParams$0();",
+        "description": "useLocalSearchParams expo router hook: press Ctrl+Space to import hook"
+    },
+    "⚛ expo router stack layout": {
+        "scope": "javascript,typescript,javascriptreact,typescriptreact",
+        "prefix": "ers",
+        "body": [
+            "import { Stack } from \"expo-router\";\r",
+            "\r",
+            "\r",
+            "export default function StackLayout() {\r",
+            "    return (\r",
+            "        <Stack>\r",
+            "            <Stack.Screen name=\"$1\" options={{ $0 }} />\r",
+            "        </Stack>\r",
+            "    )\r",
+            "}"
+        ],
+        "description": "expo router stack layout"
+    },
+    "⚛ expo router tabs layout": {
+        "scope": "javascript,typescript,javascriptreact,typescriptreact",
+        "prefix": "ert",
+        "body": [
+            "import { Tabs } from \"expo-router\";\r",
+            "\r",
+            "\r",
+            "export default function TabsLayout() {\r",
+            "    return (\r",
+            "        <Tabs\r",
+            "            screenOptions={{ \r",
+            "                $2\r",
+            "            }}\r",
+            "        >\r",
+            "            <Tabs.Screen name=\"$1\" options={{ $0 }} />\r",
+            "        </Tabs>\r",
+            "    )\r",
+            "}"
+        ],
+        "description": "expo router tabs layout"
+    },
 }

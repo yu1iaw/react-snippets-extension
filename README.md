@@ -24,6 +24,9 @@ Finally, I dedicate this extension to my dad, who celebrates his birthday on `13
 | `ssac`  | *StyleSheet align center*         | [ℹ️](#example14) |
 | `ssrw`  | *StyleSheet row*                  | [ℹ️](#example15) |
 | `ess`   | *Export StyleSheet*               | [ℹ️](#example16) |
+| `ersea` | *useLocalSearchParams*            | [ℹ️](#example17) |
+| `ers`   | *Expo Router Stack layout*        | [ℹ️](#example18) |
+| `ert`   | *Expo Router Tabs layout*         | [ℹ️](#example19) |
 
 
 <br />
@@ -164,7 +167,7 @@ const styles = StyleSheet|.create({
 container: {
     flex: 1,
     justifyContent: "center",
-    alighItems: "center",
+    alignItems: "center",
     gap: 16,|
 },
 ```
@@ -187,6 +190,40 @@ export default StyleSheet.create({
         backgroundColor: "#fff",|
     },
 })
+```
+### <p id="example17">`ersea` : 💡 useLocalSearchParams [⬆️](#overview)</p>
+```javascript
+const { | } = useLocalSearchParams();
+```
+### <p id="example18">`ers` : 💡 Expo Router Stack layout [⬆️](#overview)</p>
+```javascript
+import { Stack } from "expo-router";
+
+
+export default function StackLayout() {
+    return (
+        <Stack>
+            <Stack.Screen name="|" options={{ | }} />
+        </Stack>
+    )
+}
+```
+### <p id="example19">`ert` : 💡 Expo Router Tabs layout [⬆️](#overview)</p>
+```javascript
+import { Tabs } from "expo-router";
+
+
+export default function TabsLayout() {
+    return (
+        <Tabs
+            screenOptions={{ 
+                |
+            }}
+        >
+            <Tabs.Screen name="|" options={{ | }} />
+        </Tabs>
+    )
+}
 ```
 
 # Demo
