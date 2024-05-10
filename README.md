@@ -216,9 +216,7 @@ import { Tabs } from "expo-router";
 export default function TabsLayout() {
     return (
         <Tabs
-            screenOptions={{ 
-                |
-            }}
+            screenOptions={{|}}
         >
             <Tabs.Screen name="|" options={{ | }} />
         </Tabs>
