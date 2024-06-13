@@ -57,9 +57,9 @@ export default Example|;
 ```
 ### <p id="example3">`asfr` : 💡 Function name relates to file name [⬆️](#overview)</p>
 ```javascript
-export default function |Example() {
+export default function Example() {
     return (
-        <></>
+        <>|</>
     )
 }
 ```
@@ -75,7 +75,7 @@ export default function FolderName() {
 ```javascript
 export default function |Layout() {
     return (
-        <></>
+        <>|</>
     )
 }
 ```

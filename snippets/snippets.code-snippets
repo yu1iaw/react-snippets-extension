@@ -29,9 +29,9 @@
         "scope": "javascript,typescript,javascriptreact,typescriptreact",
         "prefix": "asfr",
         "body": [
-            "export default function $1${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}() {\r",
+            "export default function ${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}() {\r",
             "    return (\r",
-            "        <></>\r",
+            "        <>$0</>\r",
             "    )\r",
             "}"
         ],
@@ -55,7 +55,7 @@
         "body": [
             "export default function $2${1|Page,Layout|}() {\r",
             "    return (\r",
-            "        <></>\r",
+            "        <>$0</>\r",
             "    )\r",
             "}"
         ],
@@ -70,7 +70,7 @@
     "⚛ useRef": {
         "scope": "javascript,typescript,javascriptreact,typescriptreact",
         "prefix": "uref",
-        "body": "const $1Ref = useRef$0(null);",
+        "body": "const $1Ref = useRef$2(null$0);",
         "description": "useRef hook: press Ctrl+Space to import hook"
     },
     "⚛ useEffect": {
@@ -147,10 +147,10 @@
             "\r",
             "\r",
             "\r",
-            "export const $TM_FILENAME_BASE = () => {\r",
+            "export const ${TM_FILENAME_BASE/(.*)/${1:/capitalize}/} = () => {\r",
             "    return (\r",
             "        <View>\r",
-            "            <Text>$TM_FILENAME_BASE$0</Text>\r",
+            "            <Text>${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}$0</Text>\r",
             "        </View>\r",
             "    )\r",
             "}"
