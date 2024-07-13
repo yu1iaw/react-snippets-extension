@@ -41,7 +41,7 @@
         "scope": "javascript,typescript,javascriptreact,typescriptreact",
         "prefix": "aswr",
         "body": [
-            "export default function ${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/}() {\r",
+            "export default function ${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/pascalcase}/}$1() {\r",
             "    return (\r",
             "        <>$0</>\r",
             "    )\r",
