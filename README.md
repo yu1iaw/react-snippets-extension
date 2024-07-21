@@ -1,7 +1,7 @@
-## Before Start 🟠
+## Before we start 🟠
 
 As the saying goes, *"God helps those who help themselves"*. So I accumulated my efforts and did it. And now you, my colleague, as well as me, have enough fingers and toes to count all snippets I've created. In addition snippets' prefix is easy to remember and find the right keys on your keyboard. Add this awesome set, enjoy and boost your productivity.⚡
-> Note: kebab-case, snake_case, camelCase are formatted in PascalCase. <br />
+> **Note**: kebab-case, snake_case, camelCase are formatted in PascalCase. <br />
 E.g. primary-btn.jsx + `asfr` turns into `export default function PrimaryBtn() {}` etc.
 
 
@@ -17,25 +17,26 @@ Finally, I dedicate this extension to my dad, who celebrates his birthday on `13
 | `aswr`  | *Folder related function*         | [ℹ️](#example4)  |
 | `asch`  | *Choice function*                 | [ℹ️](#example5)  |
 | `us`    | *useState hook*                   | [ℹ️](#example6)  |
-| `uref`  | *useRef hook*                     | [ℹ️](#example7)  |
-| `ue`    | *useEffect hook*                  | [ℹ️](#example8)  |
-| `ule`   | *useLayoutEffect hook*            | [ℹ️](#example9)  |
-| `cctx`  | *Create Context*                  | [ℹ️](#example10) |
-| `fli`   | *FlatList*                        | [ℹ️](#example11) |
-| `ec`    | *Expo Component*                  | [ℹ️](#example12) |
-| `ss`    | *StyleSheet*                      | [ℹ️](#example13) |
-| `ssac`  | *StyleSheet align center*         | [ℹ️](#example14) |
-| `ssrw`  | *StyleSheet row*                  | [ℹ️](#example15) |
-| `ess`   | *Export StyleSheet*               | [ℹ️](#example16) |
-| `ersea` | *useLocalSearchParams*            | [ℹ️](#example17) |
-| `ers`   | *Expo Router Stack layout*        | [ℹ️](#example18) |
-| `ert`   | *Expo Router Tabs layout*         | [ℹ️](#example19) |
+| `uo`    | *useOptimistic hook*              | [ℹ️](#example7)  |
+| `uref`  | *useRef hook*                     | [ℹ️](#example8)  |
+| `ue`    | *useEffect hook*                  | [ℹ️](#example9)  |
+| `ule`   | *useLayoutEffect hook*            | [ℹ️](#example10) |
+| `cctx`  | *Create Context*                  | [ℹ️](#example11) |
+| `fli`   | *FlatList*                        | [ℹ️](#example12) |
+| `ec`    | *Expo Component*                  | [ℹ️](#example13) |
+| `ss`    | *StyleSheet*                      | [ℹ️](#example14) |
+| `ssac`  | *StyleSheet align center*         | [ℹ️](#example15) |
+| `ssrw`  | *StyleSheet row*                  | [ℹ️](#example16) |
+| `ess`   | *Export StyleSheet*               | [ℹ️](#example17) |
+| `ersea` | *useLocalSearchParams*            | [ℹ️](#example18) |
+| `ers`   | *Expo Router Stack layout*        | [ℹ️](#example19) |
+| `ert`   | *Expo Router Tabs layout*         | [ℹ️](#example20) |
 
 
 <br />
 
 # React
-> Tip: In examples below the vertical bar `|` is just a positioned cursor.
+> **Note**: In examples below the vertical bar `|` is just a positioned cursor.
 
 
 <br />
@@ -87,25 +88,30 @@ export default function |Layout() {
 const [|, set|] = useState("");
 // press `Tab` after typing the value and let magic happen
 ```
-### <p id="example7">`uref` : 💡 useRef hook [⬆️](#overview)</p>
+### <p id="example7">`uo` : 💡 useOptimistic hook [⬆️](#overview)</p>
+```javascript
+const [optimistic|, setOptimistic|] = useOptimistic(asyncRes, (state, action) => {});
+// press `Tab` after typing the value and let magic happen
+```
+### <p id="example8">`uref` : 💡 useRef hook [⬆️](#overview)</p>
 ```javascript
 const |Ref = useRef(null);
 ```
-### <p id="example8">`ue` : 💡 useEffect hook [⬆️](#overview)</p>
+### <p id="example9">`ue` : 💡 useEffect hook [⬆️](#overview)</p>
 ```javascript
 useEffect|(() => {
     
 }, [])
 // press `Ctrl`+`Space` to import useEffect
 ```
-### <p id="example9">`ule` : 💡 useLayoutEffect hook [⬆️](#overview)</p>
+### <p id="example10">`ule` : 💡 useLayoutEffect hook [⬆️](#overview)</p>
 ```javascript
 useLayoutEffect|(() => {
     
 }, [])
 // press `Ctrl`+`Space` to import useLayoutEffect
 ```
-### <p id="example10">`cctx` : 💡 Create React Context [⬆️](#overview)</p>
+### <p id="example11">`cctx` : 💡 Create React Context [⬆️](#overview)</p>
 ```javascript
 import { createContext, useContext } from "react";
 
@@ -136,7 +142,7 @@ export const use| = () => {
 
 # React Native, Expo
 
-### <p id="example11">`fli` : 💡 FlatList [⬆️](#overview)</p>
+### <p id="example12">`fli` : 💡 FlatList [⬆️](#overview)</p>
 ```javascript
 <FlatList|
     data={data|}
@@ -147,7 +153,7 @@ export const use| = () => {
     )}
 />
 ```
-### <p id="example12">`ec` : 💡 Expo Component [⬆️](#overview)</p>
+### <p id="example13">`ec` : 💡 Expo Component [⬆️](#overview)</p>
 ```javascript
 import { View, Text } from 'react-native';
 
@@ -159,13 +165,13 @@ export const Example = () => {
     )
 }
 ```
-### <p id="example13">`ss` : 💡 StyleSheet [⬆️](#overview)</p>
+### <p id="example14">`ss` : 💡 StyleSheet [⬆️](#overview)</p>
 ```javascript
 const styles = StyleSheet|.create({
     
 })
 ```
-### <p id="example14">`ssac` : 💡 StyleSheet align center [⬆️](#overview)</p>
+### <p id="example15">`ssac` : 💡 StyleSheet align center [⬆️](#overview)</p>
 ```javascript
 container: {
     flex: 1,
@@ -174,7 +180,7 @@ container: {
     gap: 16,|
 },
 ```
-### <p id="example15">`ssrw` : 💡 StyleSheet row [⬆️](#overview)</p>
+### <p id="example16">`ssrw` : 💡 StyleSheet row [⬆️](#overview)</p>
 ```javascript
 rowContainer: {
     flexDirection: "row",
@@ -183,7 +189,7 @@ rowContainer: {
     margin: 16,|
 },
 ```
-### <p id="example16">`ess` : 💡 Export StyleSheet [⬆️](#overview)</p>
+### <p id="example17">`ess` : 💡 Export StyleSheet [⬆️](#overview)</p>
 ```javascript
 import { StyleSheet } from "react-native";
 
@@ -194,11 +200,11 @@ export default StyleSheet.create({
     },
 })
 ```
-### <p id="example17">`ersea` : 💡 useLocalSearchParams [⬆️](#overview)</p>
+### <p id="example18">`ersea` : 💡 useLocalSearchParams [⬆️](#overview)</p>
 ```javascript
 const { | } = useLocalSearchParams();
 ```
-### <p id="example18">`ers` : 💡 Expo Router Stack layout [⬆️](#overview)</p>
+### <p id="example19">`ers` : 💡 Expo Router Stack layout [⬆️](#overview)</p>
 ```javascript
 import { Stack } from "expo-router";
 
@@ -211,7 +217,7 @@ export default function StackLayout() {
     )
 }
 ```
-### <p id="example19">`ert` : 💡 Expo Router Tabs layout [⬆️](#overview)</p>
+### <p id="example20">`ert` : 💡 Expo Router Tabs layout [⬆️](#overview)</p>
 ```javascript
 import { Tabs } from "expo-router";
 
@@ -233,8 +239,10 @@ export default function TabsLayout() {
 **That's it! Install and happy coding!**
 
 ---
-## What's next
-What is next? Ouch! I guess `NEXT` is next.😉
+## Lastly
+Just to make your work with this extension more comfortable, you can disable [abc] suggestion in VS Code using following steps: 
+
+##### `Ctrl + ,` opens **Settings**⚙️ > type "show words" in the **Search** field > uncheck **'Editor>Suggest: Show Words'**
 
 
 
