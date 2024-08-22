@@ -15,7 +15,7 @@ Finally, I dedicate this extension to my dad, who celebrates his birthday on `13
 | `asd`   | *Arrow function default export*   | [ℹ️](#example2)  |
 | `asfr`  | *File related function*           | [ℹ️](#example3)  |
 | `aswr`  | *Folder related function*         | [ℹ️](#example4)  |
-| `asch`  | *Choice function*                 | [ℹ️](#example5)  |
+| `uas`   | *useActionState hook*             | [ℹ️](#example5)  |
 | `us`    | *useState hook*                   | [ℹ️](#example6)  |
 | `uo`    | *useOptimistic hook*              | [ℹ️](#example7)  |
 | `uref`  | *useRef hook*                     | [ℹ️](#example8)  |
@@ -28,7 +28,7 @@ Finally, I dedicate this extension to my dad, who celebrates his birthday on `13
 | `ssac`  | *StyleSheet align center*         | [ℹ️](#example15) |
 | `ssrw`  | *StyleSheet row*                  | [ℹ️](#example16) |
 | `ess`   | *Export StyleSheet*               | [ℹ️](#example17) |
-| `ersea` | *useLocalSearchParams*            | [ℹ️](#example18) |
+| `ersea` | *useLocalSearchParams hook*       | [ℹ️](#example18) |
 | `ers`   | *Expo Router Stack layout*        | [ℹ️](#example19) |
 | `ert`   | *Expo Router Tabs layout*         | [ℹ️](#example20) |
 
@@ -75,13 +75,9 @@ export default function FolderName() {
     )
 }
 ```
-### <p id="example5">`asch` : 💡 Choose function name between 'Page' and 'Layout' [⬆️](#overview)</p>
+### <p id="example5">`uas` : 💡 useActionState hook [⬆️](#overview)</p>
 ```javascript
-export default function |Layout() {
-    return (
-        <>|</>
-    )
-}
+const [error, action, isPending] = useActionState(fn, null);
 ```
 ### <p id="example6">`us` : 💡 useState hook [⬆️](#overview)</p>
 ```javascript
@@ -200,9 +196,9 @@ export default StyleSheet.create({
     },
 })
 ```
-### <p id="example18">`ersea` : 💡 useLocalSearchParams [⬆️](#overview)</p>
+### <p id="example18">`ersea` : 💡 useLocalSearchParams hook [⬆️](#overview)</p>
 ```javascript
-const { | } = useLocalSearchParams();
+const { } = useLocalSearchParams();
 ```
 ### <p id="example19">`ers` : 💡 Expo Router Stack layout [⬆️](#overview)</p>
 ```javascript
