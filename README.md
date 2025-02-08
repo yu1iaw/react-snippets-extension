@@ -1,6 +1,7 @@
 ## Before we start 🟠
 
-As the saying goes, *"God helps those who help themselves"*. So I accumulated my efforts and did it. And now you, my colleague, as well as me, have enough fingers and toes to count all snippets I've created. In addition snippets' prefix is easy to remember and find the right keys on your keyboard. Add this awesome set, enjoy and boost your productivity.⚡
+You can remember and find the right keys for these snippets on your keyboard with ease. Add this awesome set to boost your productivity.⚡
+
 > **Note**: kebab-case, snake_case, camelCase are formatted in PascalCase. <br />
 E.g. primary-btn.jsx + `asfr` turns into `export default function PrimaryBtn() {}` etc.
 
@@ -111,16 +112,15 @@ useLayoutEffect|(() => {
 ```javascript
 import { createContext, useContext } from "react";
 
-const |Context = createContext(null);
-
+export const |Context = createContext(null);
 
 export const |ContextProvider = ({ children }) => {
     
 
     return (
-        <|Context.Provider value={{}}>
+        <|Context value={{}}>
             {children}
-        </|Context.Provider>
+        </|Context>
     );
 }
 
